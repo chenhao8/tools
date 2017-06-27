@@ -18,6 +18,14 @@ public class Client {
 
     private ExecutorService executorService;
 
+    /**
+     * 
+     * 
+     * @throws Exception 
+     * void
+     * @exception 
+     * @since  1.0.0
+    */
     @Before
     public void setUp() throws Exception {
         factory = new IntegerEventFactory();
