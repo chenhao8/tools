@@ -25,6 +25,13 @@ public class Client {
         executorService = new ThreadPoolExecutor(5, 20, 20, TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(20));
     }
 
+    /**
+     * 
+     *  
+     * void
+     * @exception 
+     * @since  1.0.0
+    */
     @Test
     public void client() {
         Disruptor<IntegerEvent> disruptor = new Disruptor<>(factory, ringBufferSize, executorService);
