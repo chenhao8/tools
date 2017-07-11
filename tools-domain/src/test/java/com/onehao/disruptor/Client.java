@@ -50,7 +50,7 @@ public class Client {
         disruptor.start();
 
         // 主线程向buffer生产数据
-        IntegerProducer1 producer = new IntegerProducer1(disruptor.getRingBuffer());
+        IntegerProducer producer = new IntegerProducer(disruptor.getRingBuffer());
         for (int i = 0; i < 100; ++i) {
             try {
                 Thread.sleep(100);
